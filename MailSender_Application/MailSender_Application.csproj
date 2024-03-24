@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MailSender_ApplicationCore\MailSender_ApplicationCore.csproj" />
+    <ProjectReference Include="..\MailSender_Domain\MailSender_Domain.csproj" />
+    <ProjectReference Include="..\MailSender_InfraCrossCutting\MailSender_InfraCrossCutting.csproj" />
+    <ProjectReference Include="..\MailSender_Infra\MailSender_Infra.csproj" />
+  </ItemGroup>
+
+</Project>
